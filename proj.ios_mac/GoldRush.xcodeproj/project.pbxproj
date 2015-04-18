@@ -82,6 +82,8 @@
 		841054861AE2A86B001582BA /* Say.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841054841AE2A86B001582BA /* Say.cpp */; };
 		841054881AE2AB2D001582BA /* balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 841054871AE2AB2D001582BA /* balloon.png */; };
 		841054891AE2AB2D001582BA /* balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 841054871AE2AB2D001582BA /* balloon.png */; };
+		8410548C1AE2B59A001582BA /* ClearMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8410548A1AE2B59A001582BA /* ClearMessage.cpp */; };
+		8410548D1AE2B59A001582BA /* ClearMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8410548A1AE2B59A001582BA /* ClearMessage.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -191,6 +193,8 @@
 		841054831AE2A7B1001582BA /* Say.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Say.h; sourceTree = "<group>"; };
 		841054841AE2A86B001582BA /* Say.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Say.cpp; sourceTree = "<group>"; };
 		841054871AE2AB2D001582BA /* balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon.png; sourceTree = "<group>"; };
+		8410548A1AE2B59A001582BA /* ClearMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClearMessage.cpp; sourceTree = "<group>"; };
+		8410548B1AE2B59A001582BA /* ClearMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearMessage.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -349,6 +353,8 @@
 				841054781AE27EC3001582BA /* Item.h */,
 				8410547F1AE292EB001582BA /* MessageBalloon.cpp */,
 				841054801AE292EB001582BA /* MessageBalloon.h */,
+				8410548A1AE2B59A001582BA /* ClearMessage.cpp */,
+				8410548B1AE2B59A001582BA /* ClearMessage.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -558,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841054791AE27EC3001582BA /* Item.cpp in Sources */,
+				8410548C1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
 				841054701AE24006001582BA /* People.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
@@ -584,6 +591,7 @@
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				8410547A1AE27EC3001582BA /* Item.cpp in Sources */,
 				841054821AE292EB001582BA /* MessageBalloon.cpp in Sources */,
+				8410548D1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

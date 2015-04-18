@@ -59,6 +59,22 @@ void MessageBalloon::birth(const char* message, Side side)
     mFreeBalloon->erase(0);
 }
 
+void MessageBalloon::clear()
+{
+    for(auto label : *mUseLabel)
+    {
+        mFreeLabel->pushBack(label);
+        this->removeChild(label);
+    }
+    for(auto balloon : *mUseBalloon)
+    {
+        mFreeBalloon->pushBack(balloon);
+        this->removeChild(balloon);
+    }
+    mUseLabel->clear();
+    mUseBalloon->clear();
+}
+
 void MessageBalloon::killOldBalloon()
 {
 	if( mUseLabel->empty() ) return;

@@ -19,7 +19,8 @@ public:
 
 public:
 	void birth(const char* message, Side side);
-
+    void clear();
+    
 private:
     void killOldBalloon();
     void moveUpwardActiveBalloon();
