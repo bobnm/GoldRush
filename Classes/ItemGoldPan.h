@@ -1,18 +1,18 @@
-#ifndef __ITEM_H__
-#define __ITEM_H__
+#ifndef __ITEM_GOLD_PAN_H__
+#define __ITEM_GOLD_PAN_H__
 
 #include <cocos2d.h>
+#include "Item.h"
 
-class Item : public cocos2d::Layer {
+class GoldPan : public Item {
     
 public:
     // implement the "static create()" method manually
-    CREATE_FUNC(Item);
+    CREATE_FUNC(GoldPan);
     
 public:
     virtual bool init();
     
 };
-
 #endif
 

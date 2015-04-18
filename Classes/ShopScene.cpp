@@ -2,6 +2,7 @@
 #include "Customer.h"
 #include "People.h"
 #include "MessageBalloon.h"
+#include "Player.h"
 
 USING_NS_CC;
 
@@ -62,6 +63,10 @@ bool Shop::init()
 		customer->setPosition(center + Vec2(150,0));
 		this->addChild(customer, 70);
 	}
+    {
+        auto player = Player::create();
+        this->addChild(player, 500);
+    }
     
     return true;
 }

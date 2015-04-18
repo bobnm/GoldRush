@@ -1,6 +1,8 @@
 #include "Item.h"
 
-Item::Item()
+bool Item::init()
 {
+    if( !Layer::init() ) return false;
+    return true;
 }
 
