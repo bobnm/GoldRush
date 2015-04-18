@@ -1,6 +1,0 @@
-class Talk {
-public:
-	Talk();
-
-};
-

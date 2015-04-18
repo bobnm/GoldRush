@@ -1,4 +1,6 @@
 #include "ShopScene.h"
+#include "Customer.h"
+#include "People.h"
 
 USING_NS_CC;
 
@@ -27,12 +29,34 @@ bool Shop::init()
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+	Vec2 center(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y);
 
-    auto sprite = Sprite::create("table.png");
-	sprite->getTexture()->setAliasTexParameters();
-    sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-	sprite->setScale(3);
-    this->addChild(sprite, 0);
+	{
+		auto sprite = Sprite::create("bg.png");
+		sprite->getTexture()->setAliasTexParameters();
+		sprite->setPosition(center);
+		sprite->setScale(3);
+		this->addChild(sprite, 0);
+	}
+	{
+		auto people = People::create();
+		people->setPosition(center + Vec2(0, 60));
+		this->addChild(people, 50);
+	}
+
+	{
+		auto sprite = Sprite::create("table.png");
+		sprite->getTexture()->setAliasTexParameters();
+		sprite->setPosition(center);
+		sprite->setScale(3);
+		this->addChild(sprite, 100);
+	}
+
+	{
+		auto customer = Customer::create();
+		customer->setPosition(center + Vec2(150,0));
+		this->addChild(customer, 70);
+	}
     
     return true;
 }
