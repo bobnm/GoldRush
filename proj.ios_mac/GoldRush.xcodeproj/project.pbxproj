@@ -74,6 +74,14 @@
 		8410546D1AE23F87001582BA /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 8410546B1AE23F87001582BA /* people.png */; };
 		841054701AE24006001582BA /* People.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8410546E1AE24006001582BA /* People.cpp */; };
 		841054711AE24006001582BA /* People.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8410546E1AE24006001582BA /* People.cpp */; };
+		841054791AE27EC3001582BA /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841054771AE27EC3001582BA /* Item.cpp */; };
+		8410547A1AE27EC3001582BA /* Item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841054771AE27EC3001582BA /* Item.cpp */; };
+		841054811AE292EB001582BA /* MessageBalloon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8410547F1AE292EB001582BA /* MessageBalloon.cpp */; };
+		841054821AE292EB001582BA /* MessageBalloon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8410547F1AE292EB001582BA /* MessageBalloon.cpp */; };
+		841054851AE2A86B001582BA /* Say.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841054841AE2A86B001582BA /* Say.cpp */; };
+		841054861AE2A86B001582BA /* Say.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 841054841AE2A86B001582BA /* Say.cpp */; };
+		841054881AE2AB2D001582BA /* balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 841054871AE2AB2D001582BA /* balloon.png */; };
+		841054891AE2AB2D001582BA /* balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 841054871AE2AB2D001582BA /* balloon.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -176,6 +184,13 @@
 		8410546B1AE23F87001582BA /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		8410546E1AE24006001582BA /* People.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = People.cpp; sourceTree = "<group>"; };
 		8410546F1AE24006001582BA /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		841054771AE27EC3001582BA /* Item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Item.cpp; sourceTree = "<group>"; };
+		841054781AE27EC3001582BA /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		8410547F1AE292EB001582BA /* MessageBalloon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MessageBalloon.cpp; sourceTree = "<group>"; };
+		841054801AE292EB001582BA /* MessageBalloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageBalloon.h; sourceTree = "<group>"; };
+		841054831AE2A7B1001582BA /* Say.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Say.h; sourceTree = "<group>"; };
+		841054841AE2A86B001582BA /* Say.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Say.cpp; sourceTree = "<group>"; };
+		841054871AE2AB2D001582BA /* balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -309,6 +324,7 @@
 				841054681AE23CE6001582BA /* customer.png */,
 				8410546B1AE23F87001582BA /* people.png */,
 				841054611AE23391001582BA /* bg.png */,
+				841054871AE2AB2D001582BA /* balloon.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -325,8 +341,14 @@
 				8410545B1AE22A4C001582BA /* ShopScene.h */,
 				841054641AE23B84001582BA /* Customer.cpp */,
 				841054651AE23B84001582BA /* Customer.h */,
+				841054831AE2A7B1001582BA /* Say.h */,
+				841054841AE2A86B001582BA /* Say.cpp */,
 				8410546E1AE24006001582BA /* People.cpp */,
 				8410546F1AE24006001582BA /* People.h */,
+				841054771AE27EC3001582BA /* Item.cpp */,
+				841054781AE27EC3001582BA /* Item.h */,
+				8410547F1AE292EB001582BA /* MessageBalloon.cpp */,
+				841054801AE292EB001582BA /* MessageBalloon.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -504,6 +526,7 @@
 				841054621AE23391001582BA /* bg.png in Resources */,
 				8410545F1AE22AF5001582BA /* table.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
+				841054881AE2AB2D001582BA /* balloon.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
@@ -517,6 +540,7 @@
 				8410546A1AE23CE6001582BA /* customer.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				841054631AE23391001582BA /* bg.png in Resources */,
+				841054891AE2AB2D001582BA /* balloon.png in Resources */,
 				8410546D1AE23F87001582BA /* people.png in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
@@ -533,14 +557,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841054791AE27EC3001582BA /* Item.cpp in Sources */,
 				841054701AE24006001582BA /* People.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				841054851AE2A86B001582BA /* Say.cpp in Sources */,
 				841054661AE23B84001582BA /* Customer.cpp in Sources */,
 				8410545C1AE22A4C001582BA /* ShopScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				841054811AE292EB001582BA /* MessageBalloon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,9 +578,12 @@
 				841054671AE23B84001582BA /* Customer.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				841054861AE2A86B001582BA /* Say.cpp in Sources */,
 				8410545D1AE22A4C001582BA /* ShopScene.cpp in Sources */,
 				841054711AE24006001582BA /* People.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				8410547A1AE27EC3001582BA /* Item.cpp in Sources */,
+				841054821AE292EB001582BA /* MessageBalloon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

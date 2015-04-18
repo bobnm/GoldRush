@@ -2,6 +2,7 @@
 #define __CUSTOMER_H__
 
 #include <cocos2d.h>
+#include "Item.h"
 
 class Customer : public cocos2d::Layer {
 
@@ -13,9 +14,12 @@ public:
     virtual bool init();
 
 public:
-	//const Item& getNeedItem() const;
+	const Item& getNeedItem() const;
 	int getMoney() const { return mMoney; }
 
+private:
+    void say(const char* message);
+    
 private:
 	int mMoney;
 };

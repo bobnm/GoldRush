@@ -1,6 +1,7 @@
 #include "ShopScene.h"
 #include "Customer.h"
 #include "People.h"
+#include "MessageBalloon.h"
 
 USING_NS_CC;
 
@@ -31,6 +32,10 @@ bool Shop::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 	Vec2 center(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y);
 
+    {
+        auto balloon = MessageBalloon::create();
+        this->addChild(balloon, 200);
+    }
 	{
 		auto sprite = Sprite::create("bg.png");
 		sprite->getTexture()->setAliasTexParameters();

@@ -36,7 +36,7 @@ void People::update(float delta)
 {
     for(auto sprite : *mSprite)
 	{
-		sprite->setPosition(sprite->getPosition() + Vec2(100 * delta, 0));
+		sprite->setPosition(sprite->getPosition() + Vec2(10 * delta, 0));
 		if( sprite->getPosition().x > Util::GetScreenWidth() )
 		{
             sprite->setPosition(Vec2(-Util::GetScreenWidth(), 20));
