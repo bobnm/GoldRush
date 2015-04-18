@@ -1,0 +1,6 @@
+class Talk {
+public:
+	Talk();
+
+};
+
