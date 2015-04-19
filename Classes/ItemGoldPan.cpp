@@ -10,6 +10,8 @@ bool GoldPan::init()
     sprite->getTexture()->setAliasTexParameters();
     sprite->setScale(3);
     this->addChild(sprite, 0);
+
+	initTouch(sprite);
     
     return true;
 }

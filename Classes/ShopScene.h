@@ -17,6 +17,12 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(Shop);
+    
+private:
+    bool onTouchBegan_(cocos2d::Touch* touch, cocos2d::Event* event);
+    void onTouchMoved_(cocos2d::Touch* touch, cocos2d::Event* event);
+    void onTouchEnded_(cocos2d::Touch* touch, cocos2d::Event* event);
+    void onTouchCancelled_(cocos2d::Touch* touch, cocos2d::Event* event);
 };
 
 #endif // __SHOP_SCENE_H__

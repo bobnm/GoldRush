@@ -15,9 +15,6 @@ bool Player::init()
     mInventoryID->push_back("GoldPan");
     mInventoryID->push_back("GoldPan");
     mInventoryID->push_back("GoldPan");
-    mInventoryID->push_back("GoldPan");
-    mInventoryID->push_back("GoldPan");
-    mInventoryID->push_back("GoldPan");
     
     int i = 0;
     for(auto item_id : *mInventoryID)
