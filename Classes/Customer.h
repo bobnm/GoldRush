@@ -2,12 +2,11 @@
 #define __CUSTOMER_H__
 
 #include <cocos2d.h>
-#include "Item.h"
 
+class Item;
 class Customer : public cocos2d::Layer {
 
 public:
-    // implement the "static create()" method manually
     CREATE_FUNC(Customer);
 
 public:
@@ -15,19 +14,11 @@ public:
 
     static Customer* getInstance();
 
+protected:
+	void setSingleton(Customer* customer);
+
 public:
-	const Item& getNeedItem() const;
-	int getMoney() const { return mMoney; }
-
-	void onPresented(Item* item);
-
-private:
-    void say(const char* message);
-    
-private:
-	int mMoney;
-	cocos2d::Sprite* mSprite;
-	bool mDone;
+	virtual void onPresented(Item* item) { CC_UNUSED_PARAM(item); }
 };
 
 #endif

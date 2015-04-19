@@ -128,6 +128,8 @@
 		846109691AE3CB5F00A6328A /* WalkIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109661AE3CB5F00A6328A /* WalkIn.cpp */; };
 		8461096C1AE3CCE100A6328A /* WalkOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096A1AE3CCE100A6328A /* WalkOut.cpp */; };
 		8461096D1AE3CCE100A6328A /* WalkOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096A1AE3CCE100A6328A /* WalkOut.cpp */; };
+		846109701AE3CDF800A6328A /* CustomerFirst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */; };
+		846109711AE3CDF800A6328A /* CustomerFirst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -271,6 +273,8 @@
 		846109671AE3CB5F00A6328A /* WalkIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkIn.h; sourceTree = "<group>"; };
 		8461096A1AE3CCE100A6328A /* WalkOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WalkOut.cpp; sourceTree = "<group>"; };
 		8461096B1AE3CCE100A6328A /* WalkOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkOut.h; sourceTree = "<group>"; };
+		8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerFirst.cpp; sourceTree = "<group>"; };
+		8461096F1AE3CDF800A6328A /* CustomerFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerFirst.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -463,6 +467,8 @@
 				846109671AE3CB5F00A6328A /* WalkIn.h */,
 				8461096A1AE3CCE100A6328A /* WalkOut.cpp */,
 				8461096B1AE3CCE100A6328A /* WalkOut.h */,
+				8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */,
+				8461096F1AE3CDF800A6328A /* CustomerFirst.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -697,6 +703,7 @@
 			files = (
 				846109431AE3A19500A6328A /* ItemDollar.cpp in Sources */,
 				8461093B1AE38A7B00A6328A /* Buy.cpp in Sources */,
+				846109701AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
 				846109331AE34DE300A6328A /* Desk.cpp in Sources */,
 				841054791AE27EC3001582BA /* Item.cpp in Sources */,
 				846109371AE350AA00A6328A /* Util.cpp in Sources */,
@@ -735,6 +742,7 @@
 				8410545D1AE22A4C001582BA /* ShopScene.cpp in Sources */,
 				841054711AE24006001582BA /* People.cpp in Sources */,
 				8461093C1AE38A7B00A6328A /* Buy.cpp in Sources */,
+				846109711AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				846109381AE350AA00A6328A /* Util.cpp in Sources */,
 				841054991AE2C173001582BA /* ItemFactory.cpp in Sources */,
