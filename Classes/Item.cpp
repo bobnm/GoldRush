@@ -27,6 +27,7 @@ void Item::initTouch(Node* node)
 bool Item::onTouchBegan_(Touch* touch, Event* event)
 {
 	if( !mTouchNode ) return false;
+	if( mLock ) return false;
 	Vec2 local = mTouchNode->convertToNodeSpaceAR(touch->getLocation()) * mTouchNode->getScale();
 	Rect rect = mTouchNode->getBoundingBox();
 	//log("(%f, %f) -> (%f, %f) / (%f, %f, %f, %f)",
@@ -56,7 +57,7 @@ void Item::onTouchEnded_(Touch* touch, Event* event)
 	mTouchNode->setScale(mOriginalScale);
 	mTouchNode->setOpacity(mOriginalOpacity);
     
-    Desk::getInstance()->onDrop(*this);
+    Desk::getInstance()->onDrop(this);
 }
 
 void Item::onTouchCancelled_(Touch* touch, Event* event)
@@ -64,5 +65,16 @@ void Item::onTouchCancelled_(Touch* touch, Event* event)
 	//log("sprite onTouchesCancelled.. ");
 	mTouchNode->setScale(mOriginalScale);
 	mTouchNode->setOpacity(mOriginalOpacity);
+}
+
+void Item::sell()
+{
+	auto sprite = this->getChildren().at(0);
+	sprite->stopAllActions();
+	auto sequence = Sequence::create(
+			FadeOut::create(.5),
+			CallFunc::create([this](){ this->removeFromParent(); }),
+			NULL);
+	sprite->runAction(sequence);
 }
 

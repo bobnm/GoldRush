@@ -19,7 +19,7 @@ public:
 	const Item& getNeedItem() const;
 	int getMoney() const { return mMoney; }
 
-	void onPresented(const Item& item);
+	void onPresented(Item* item);
 
 private:
     void say(const char* message);
@@ -27,6 +27,7 @@ private:
 private:
 	int mMoney;
 	cocos2d::Sprite* mSprite;
+	bool mDone;
 };
 
 #endif

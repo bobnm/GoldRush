@@ -22,15 +22,15 @@ bool Desk::init()
 	return true;
 }
 
-bool Desk::onDrop(const Item& item)
+bool Desk::onDrop(Item* item)
 {
 	static const Rect sRect(
 			130 * 3,
 			0,
 			Util::GetScreenWidth() - 130 * 3,
 			Util::GetScreenHeight() - 180 * 3);
-	if( sRect.containsPoint(item.getDragStartPos()) ) return false;
-	if( !sRect.containsPoint(item.getPosition()) ) return false;
+	if( sRect.containsPoint(item->getDragStartPos()) ) return false;
+	if( !sRect.containsPoint(item->getPosition()) ) return false;
 	log("drop");
 
 	Customer::getInstance()->onPresented(item);

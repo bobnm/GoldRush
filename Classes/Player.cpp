@@ -3,6 +3,16 @@
 
 using namespace cocos2d;
 
+namespace {
+    Player* sInstance = nullptr;
+}
+
+Player* Player::getInstance()
+{
+    CC_ASSERT(sInstance);
+    return sInstance;
+}
+
 bool Player::init()
 {
     if( !Layer::init() ) return false;
@@ -27,6 +37,14 @@ bool Player::init()
         this->addChild(item);
         i++;
     }
+    CC_ASSERT(sInstance == nullptr);
+    sInstance = this;
     return true;
+}
+
+void Player::sell(Item* item)
+{
+	mInventory->eraseObject(item);
+	item->sell();
 }
 

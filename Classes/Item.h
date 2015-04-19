@@ -13,6 +13,9 @@ public:
     virtual bool init();
 	const cocos2d::Vec2& getDragStartPos() const { return mDragStartPos; }
     virtual const char* getItemName() const { return "Item"; }
+
+	void lock() { mLock = true; }
+	void sell();
     
 protected:
 	void initTouch(cocos2d::Node* node);
@@ -29,6 +32,7 @@ private:
 	float mOriginalOpacity;
 	cocos2d::Vec2 mTouchOffset;
 	cocos2d::Vec2 mDragStartPos;
+	bool mLock;
 };
 
 #endif

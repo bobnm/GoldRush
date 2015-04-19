@@ -2,6 +2,7 @@
 #include "Say.h"
 #include "ClearMessage.h"
 #include "MessageBalloon.h"
+#include "Buy.h"
 
 using namespace cocos2d;
 
@@ -53,15 +54,17 @@ bool Customer::init()
                                      FadeOut::create(.5),
                                      NULL);
     sprite->runAction(sequence);
+	mDone = false;
 
 	CC_ASSERT(!sInstance);
 	sInstance = this;
 	return true;
 }
 
-void Customer::onPresented(const Item& item)
+void Customer::onPresented(Item* item)
 {
-    if( std::string(item.getItemName()) == "GoldPan" )
+	if( mDone ) return;
+    if( std::string(item->getItemName()) == "GoldPan" )
 	{
 		auto sprite = this->getChildren().at(0);
 		sprite->stopAllActions();
@@ -80,9 +83,12 @@ void Customer::onPresented(const Item& item)
 				Say::create("ありがとう。"),
 				DelayTime::create(1),
 				ClearMessage::create(),
+				Buy::create(item),
 				FadeOut::create(.5),
 				NULL);
 		sprite->runAction(sequence);
+		item->lock();
+		mDone = true;
 	}
 }
 

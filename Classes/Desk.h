@@ -15,7 +15,7 @@ public:
 public:
     virtual bool init();
 
-	bool onDrop(const Item& item);
+	bool onDrop(Item* item);
 
 };
 

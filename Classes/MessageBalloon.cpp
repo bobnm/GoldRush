@@ -1,4 +1,5 @@
 #include "MessageBalloon.h"
+#include "Util.h"
 
 using namespace cocos2d;
 
@@ -46,11 +47,22 @@ void MessageBalloon::birth(const char* message, Side side)
     auto label = mFreeLabel->front();
 	auto balloon = mFreeBalloon->front();
 	label->setString(message);
-    label->setAnchorPoint(Vec2::ZERO);
-    label->setAlignment(TextHAlignment::LEFT);
-    label->setPosition(Vec2(350,300));
-    balloon->setAnchorPoint(Vec2::ZERO);
-	balloon->setPosition(Vec2(350 - 10,300));
+	if( side == LEFT )
+	{
+		label->setAnchorPoint(Vec2::ZERO);
+		label->setAlignment(TextHAlignment::LEFT);
+		label->setPosition(Vec2(350,300));
+		balloon->setAnchorPoint(Vec2::ZERO);
+		balloon->setPosition(Vec2(350 - 10, 300));
+	}
+	else
+	{
+		label->setAnchorPoint(Vec2(1,0));
+		label->setAlignment(TextHAlignment::RIGHT);
+		label->setPosition(Vec2(Util::GetScreenWidth() - 20,300));
+		balloon->setAnchorPoint(Vec2(1,0));
+		balloon->setPosition(Vec2(Util::GetScreenWidth() - 20 + 10, 300));
+	}
     this->addChild(balloon);
     this->addChild(label);
     mUseLabel->pushBack(label);
