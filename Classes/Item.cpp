@@ -34,27 +34,31 @@ bool Item::onTouchBegan_(Touch* touch, Event* event)
 	//		rect.getMinX(), rect.getMinY(), rect.getMaxX(), rect.getMaxY());
     if( !mTouchNode->getBoundingBox().containsPoint(local) ) return false;
 	mOriginalScale = mTouchNode->getScale();
+	mOriginalOpacity = mTouchNode->getOpacity();
 	mTouchNode->setScale(mOriginalScale * 0.8f);
+	mTouchNode->setOpacity(mOriginalOpacity * 0.6f);
 	mTouchOffset = local;
-	log("sprite onToucheBegan.. ");
+	//log("sprite onToucheBegan.. ");
     return true;
 }
 
 void Item::onTouchMoved_(Touch* touch, Event* event)
 {
-	log("sprite onTouchesMoved.. ");
+	//log("sprite onTouchesMoved.. ");
 	this->setPosition(touch->getLocation() - mTouchOffset);
 }
 
 void Item::onTouchEnded_(Touch* touch, Event* event)
 {
-	log("sprite onTouchesEnded.. ");
+	//log("sprite onTouchesEnded.. ");
 	mTouchNode->setScale(mOriginalScale);
+	mTouchNode->setOpacity(mOriginalOpacity);
 }
 
 void Item::onTouchCancelled_(Touch* touch, Event* event)
 {
-	log("sprite onTouchesCancelled.. ");
+	//log("sprite onTouchesCancelled.. ");
 	mTouchNode->setScale(mOriginalScale);
+	mTouchNode->setOpacity(mOriginalOpacity);
 }
 

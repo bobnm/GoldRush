@@ -24,6 +24,7 @@ private:
 private:
 	cocos2d::Node* mTouchNode;
 	float mOriginalScale;
+	float mOriginalOpacity;
 	cocos2d::Vec2 mTouchOffset;
 };
 
