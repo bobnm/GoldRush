@@ -20,40 +20,46 @@ Customer* Customer::getInstance()
 bool Customer::init()
 {
 	if( !Layer::init() ) return false;
-	auto sprite = Sprite::create("customer.png");
+	auto sprite = Sprite::create("customer04.png");
 	sprite->getTexture()->setAliasTexParameters();
 	sprite->setScale(3);
     this->addChild(sprite, 0);
     
     sprite->setOpacity(0);
     auto sequence = Sequence::create(
-                                     FadeIn::create(.5),
+									 Spawn::create(
+                                   	 	 FadeIn::create(.5),
+										 JumpBy::create(.5,Vec2(10,0),10,3),
+										 NULL),
                                      DelayTime::create(1),
-                                     Say::create("よう。"),
+                                     Say::create("よォ。"),
                                      DelayTime::create(1),
-                                     Say::create("ここは道具屋か。"),
+                                     Say::create("ここは道具屋か？"),
                                      DelayTime::create(4),
                                      Say::create("俺も金を堀りに来た口さ。"),
                                      DelayTime::create(4),
                                      Say::create("でもいま着いたばかりで"),
                                      DelayTime::create(2),
-                                     Say::create("まだ何もわからない。"),
+                                     Say::create("まだ何もわかんねえんだ。"),
                                      DelayTime::create(4),
-                                     Say::create("金は、どこで採れるんだ？"),
+                                     Say::create("金は、どこで採れる？"),
                                      DelayTime::create(4),
-                                     Say::create("どんな道具がいる？"),
+                                     Say::create("どんな道具がいるんだい。"),
                                      DelayTime::create(8),
                                      Say::create("何か見つくろってくれよ。"),
                                      DelayTime::create(4),
                                      Say::create("まずはなんでもいいんだ。"),
                                      DelayTime::create(8),
-                                     Say::create("なにか道具ねえのかい？"),
+                                     Say::create("なにか道具ねェのかい？"),
                                      DelayTime::create(10),
-                                     Say::create("急いでいるんだ。もういい。"),
+                                     Say::create("急いでんだ。もういい。"),
                                      DelayTime::create(1),
 									 CallFunc::create([this](){ this->mDone = true; }),
                                      ClearMessage::create(),
-                                     FadeOut::create(.5),
+									 Spawn::create(
+                                   	 	 FadeOut::create(.5),
+										 JumpBy::create(.5,Vec2(10,0),10,3),
+										 NULL),
                                      NULL);
     sprite->runAction(sequence);
 	mDone = false;
@@ -88,7 +94,10 @@ void Customer::onPresented(Item* item)
 				DelayTime::create(1),
 				ClearMessage::create(),
 				Buy::create(item),
-				FadeOut::create(.5),
+				Spawn::create(
+					FadeOut::create(.5),
+					JumpBy::create(.5,Vec2(10,0),10,3),
+					NULL),
 				NULL);
 		sprite->runAction(sequence);
 		item->lock();
