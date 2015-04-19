@@ -82,7 +82,7 @@ void Customer::onPresented(Item* item)
 				Say::create("オーケー"),
 				DelayTime::create(1),
 				Say::create("使ってみるよ。"),
-				PayDollar::create(49),
+				PayDollar::create(25),
 				DelayTime::create(3),
 				Say::create("ありがとう。"),
 				DelayTime::create(1),
