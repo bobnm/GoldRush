@@ -22,5 +22,15 @@ float GetRand(float max)
 	return (float)rand() / RAND_MAX * max;
 }
 
+int GetRand(int max)
+{
+	return (int)GetRand((float)max);
+}
+
+int GetRand(int min, int max)
+{
+	return GetRand(max) + min;
+}
+
 }
 

@@ -2,6 +2,7 @@
 #define __ITEM_H__
 
 #include <cocos2d.h>
+#include "ItemDB.h"
 
 class Item : public cocos2d::Layer {
     
@@ -12,7 +13,9 @@ public:
 public:
     virtual bool init();
 	const cocos2d::Vec2& getDragStartPos() const { return mDragStartPos; }
-    virtual const char* getItemName() const { return "Item"; }
+    virtual const char* getItemID() const { return "Item"; }
+	int getPrice() const { return ItemDB::getPrice(this->getItemID()); }
+    const char* getNameJa() const { return ItemDB::getNameJa(this->getItemID()); }
 
 	void lock() { mLock = true; }
 	void sell();

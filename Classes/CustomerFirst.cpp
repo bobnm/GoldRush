@@ -1,7 +1,7 @@
 #include "CustomerFirst.h"
 #include "Say.h"
 #include "ClearMessage.h"
-#include "MessageBalloon.h"
+#include "Player.h"
 #include "Buy.h"
 #include "PayDollar.h"
 #include "WalkIn.h"
@@ -73,11 +73,11 @@ void CustomerFirst::onPresented(Item* item)
 {
 	log("onPresented");
 	if( mDone ) return;
-    if( std::string(item->getItemName()) == "GoldPan" )
+    if( std::string(item->getItemID()) == "GoldPan" )
 	{
 		auto sprite = this->getChildren().at(0);
 		sprite->stopAllActions();
-		MessageBalloon::getInstance()->birth("ゴールドパン", MessageBalloon::RIGHT);
+		Player::getInstance()->sayItemName(item);
 		auto sequence = Sequence::create(
 				DelayTime::create(2),
 				Say::create("……"),

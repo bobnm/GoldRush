@@ -1,6 +1,7 @@
 #include "Player.h"
 #include "ItemFactory.h"
 #include "Util.h"
+#include "MessageBalloon.h"
 
 using namespace cocos2d;
 
@@ -55,5 +56,10 @@ void Player::take(Item* item)
 	mInventory->pushBack(item);
 	item->setPosition(Vec2(500 + Util::GetRand(100), 100 + Util::GetRand(80)));
 	this->addChild(item);
+}
+
+void Player::sayItemName(Item* item)
+{
+	MessageBalloon::getInstance()->birth(item->getNameJa(), MessageBalloon::RIGHT);
 }
 

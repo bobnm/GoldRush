@@ -15,6 +15,8 @@ public:
 
 	void sell(Item* item);
 	void take(Item* item);
+
+	void sayItemName(Item* item);
     
 private:
     std::vector<std::string>* mInventoryID;

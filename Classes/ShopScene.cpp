@@ -62,7 +62,7 @@ bool Shop::init()
 	}
 
 	{
-		auto customer = CustomerFactory::create("First");
+		auto customer = CustomerFactory::create("Random");
 		this->addChild(customer, 70);
 	}
 

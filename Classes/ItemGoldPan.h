@@ -11,7 +11,7 @@ public:
     CREATE_FUNC(GoldPan);
     virtual bool init();
     
-	virtual const char* getItemName() const { return "GoldPan"; }
+	virtual const char* getItemID() const { return "GoldPan"; }
 };
 
 #endif
