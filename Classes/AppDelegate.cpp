@@ -34,7 +34,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("GoldRush", Rect(0,0,320 * 3, 240 * 3));
+        glview = GLViewImpl::createWithRect("Forty-niners", Rect(0,0,320 * 3, 240 * 3));
         director->setOpenGLView(glview);
     }
 
