@@ -4,6 +4,8 @@
 #include "MessageBalloon.h"
 #include "Buy.h"
 #include "PayDollar.h"
+#include "WalkIn.h"
+#include "WalkOut.h"
 
 using namespace cocos2d;
 
@@ -27,10 +29,7 @@ bool Customer::init()
     
     sprite->setOpacity(0);
     auto sequence = Sequence::create(
-									 Spawn::create(
-                                   	 	 FadeIn::create(.5),
-										 JumpBy::create(.5,Vec2(10,0),10,3),
-										 NULL),
+									 WalkIn::create(.5,Vec2(10,0),10,3),
                                      DelayTime::create(1),
                                      Say::create("よォ。"),
                                      DelayTime::create(1),
@@ -56,10 +55,7 @@ bool Customer::init()
                                      DelayTime::create(1),
 									 CallFunc::create([this](){ this->mDone = true; }),
                                      ClearMessage::create(),
-									 Spawn::create(
-                                   	 	 FadeOut::create(.5),
-										 JumpBy::create(.5,Vec2(10,0),10,3),
-										 NULL),
+									 WalkOut::create(.5,Vec2(10,0),10,3),
                                      NULL);
     sprite->runAction(sequence);
 	mDone = false;
@@ -94,10 +90,7 @@ void Customer::onPresented(Item* item)
 				DelayTime::create(1),
 				ClearMessage::create(),
 				Buy::create(item),
-				Spawn::create(
-					FadeOut::create(.5),
-					JumpBy::create(.5,Vec2(10,0),10,3),
-					NULL),
+				WalkOut::create(.5,Vec2(10,0),10,3),
 				NULL);
 		sprite->runAction(sequence);
 		item->lock();

@@ -124,6 +124,10 @@
 		846109631AE3C54400A6328A /* customer03.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461095C1AE3C54400A6328A /* customer03.png */; };
 		846109641AE3C54400A6328A /* customer04.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461095D1AE3C54400A6328A /* customer04.png */; };
 		846109651AE3C54400A6328A /* customer04.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461095D1AE3C54400A6328A /* customer04.png */; };
+		846109681AE3CB5F00A6328A /* WalkIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109661AE3CB5F00A6328A /* WalkIn.cpp */; };
+		846109691AE3CB5F00A6328A /* WalkIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109661AE3CB5F00A6328A /* WalkIn.cpp */; };
+		8461096C1AE3CCE100A6328A /* WalkOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096A1AE3CCE100A6328A /* WalkOut.cpp */; };
+		8461096D1AE3CCE100A6328A /* WalkOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096A1AE3CCE100A6328A /* WalkOut.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -263,6 +267,10 @@
 		8461095B1AE3C54400A6328A /* customer02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer02.png; sourceTree = "<group>"; };
 		8461095C1AE3C54400A6328A /* customer03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer03.png; sourceTree = "<group>"; };
 		8461095D1AE3C54400A6328A /* customer04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customer04.png; sourceTree = "<group>"; };
+		846109661AE3CB5F00A6328A /* WalkIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WalkIn.cpp; sourceTree = "<group>"; };
+		846109671AE3CB5F00A6328A /* WalkIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkIn.h; sourceTree = "<group>"; };
+		8461096A1AE3CCE100A6328A /* WalkOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WalkOut.cpp; sourceTree = "<group>"; };
+		8461096B1AE3CCE100A6328A /* WalkOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkOut.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -451,6 +459,10 @@
 				8461093E1AE399EA00A6328A /* PayDollar.h */,
 				846109411AE3A19500A6328A /* ItemDollar.cpp */,
 				846109421AE3A19500A6328A /* ItemDollar.h */,
+				846109661AE3CB5F00A6328A /* WalkIn.cpp */,
+				846109671AE3CB5F00A6328A /* WalkIn.h */,
+				8461096A1AE3CCE100A6328A /* WalkOut.cpp */,
+				8461096B1AE3CCE100A6328A /* WalkOut.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -696,9 +708,11 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				841054981AE2C173001582BA /* ItemFactory.cpp in Sources */,
+				846109681AE3CB5F00A6328A /* WalkIn.cpp in Sources */,
 				841054941AE2BE46001582BA /* Player.cpp in Sources */,
 				841054851AE2A86B001582BA /* Say.cpp in Sources */,
 				841054661AE23B84001582BA /* Customer.cpp in Sources */,
+				8461096C1AE3CCE100A6328A /* WalkOut.cpp in Sources */,
 				8410545C1AE22A4C001582BA /* ShopScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				8461093F1AE399EA00A6328A /* PayDollar.cpp in Sources */,
@@ -714,6 +728,7 @@
 				841054911AE2BA47001582BA /* ItemGoldPan.cpp in Sources */,
 				846109441AE3A19500A6328A /* ItemDollar.cpp in Sources */,
 				846109341AE34DE300A6328A /* Desk.cpp in Sources */,
+				846109691AE3CB5F00A6328A /* WalkIn.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				841054861AE2A86B001582BA /* Say.cpp in Sources */,
@@ -728,6 +743,7 @@
 				846109401AE399EA00A6328A /* PayDollar.cpp in Sources */,
 				841054821AE292EB001582BA /* MessageBalloon.cpp in Sources */,
 				8410548D1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
+				8461096D1AE3CCE100A6328A /* WalkOut.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
