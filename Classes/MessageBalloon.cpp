@@ -63,8 +63,11 @@ void MessageBalloon::birth(const char* message, Side side)
 		balloon->setAnchorPoint(Vec2(1,0));
 		balloon->setPosition(Vec2(Util::GetScreenWidth() - 20 + 10, 300));
 	}
-    this->addChild(balloon);
-    this->addChild(label);
+	if( std::string(message) != "" )
+	{
+		this->addChild(balloon);
+		this->addChild(label);
+	}
     mUseLabel->pushBack(label);
     mUseBalloon->pushBack(balloon);
     mFreeLabel->erase(0);
@@ -93,8 +96,14 @@ void MessageBalloon::killOldBalloon()
 	if( mUseBalloon->empty() ) return;
 	auto label = mUseLabel->front();
 	auto balloon = mUseBalloon->front();
-    this->removeChild(label);
-    this->removeChild(balloon);
+	if( label->getParent() == this )
+	{
+		this->removeChild(label);
+	}
+	if( balloon->getParent() == this )
+	{
+		this->removeChild(balloon);
+	}
     mFreeLabel->pushBack(label);
     mFreeBalloon->pushBack(balloon);
     mUseLabel->erase(0);
@@ -105,10 +114,12 @@ void MessageBalloon::moveUpwardActiveBalloon()
 {
     for(auto label : *mUseLabel)
     {
+		if( label->getParent() != this ) continue;
         label->runAction(MoveBy::create(0.1, Vec2(0, 30)));
     }
     for(auto balloon : *mUseBalloon)
     {
+		if( balloon->getParent() != this ) continue;
         balloon->runAction(MoveBy::create(0.1, Vec2(0, 30)));
     }
 }

@@ -1,5 +1,5 @@
 #include "ShopScene.h"
-#include "CustomerFirst.h"
+#include "CustomerFactory.h"
 #include "People.h"
 #include "MessageBalloon.h"
 #include "Player.h"
@@ -62,7 +62,7 @@ bool Shop::init()
 	}
 
 	{
-		auto customer = CustomerFirst::create();
+		auto customer = CustomerFactory::create("First");
 		this->addChild(customer, 70);
 	}
 

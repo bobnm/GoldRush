@@ -130,6 +130,10 @@
 		8461096D1AE3CCE100A6328A /* WalkOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096A1AE3CCE100A6328A /* WalkOut.cpp */; };
 		846109701AE3CDF800A6328A /* CustomerFirst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */; };
 		846109711AE3CDF800A6328A /* CustomerFirst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */; };
+		846109741AE3DAC100A6328A /* CustomerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109721AE3DAC100A6328A /* CustomerFactory.cpp */; };
+		846109751AE3DAC100A6328A /* CustomerFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109721AE3DAC100A6328A /* CustomerFactory.cpp */; };
+		8461097C1AE3E2F200A6328A /* Margin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461097A1AE3E2F200A6328A /* Margin.cpp */; };
+		8461097D1AE3E2F200A6328A /* Margin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461097A1AE3E2F200A6328A /* Margin.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -275,6 +279,10 @@
 		8461096B1AE3CCE100A6328A /* WalkOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkOut.h; sourceTree = "<group>"; };
 		8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerFirst.cpp; sourceTree = "<group>"; };
 		8461096F1AE3CDF800A6328A /* CustomerFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerFirst.h; sourceTree = "<group>"; };
+		846109721AE3DAC100A6328A /* CustomerFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerFactory.cpp; sourceTree = "<group>"; };
+		846109731AE3DAC100A6328A /* CustomerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerFactory.h; sourceTree = "<group>"; };
+		8461097A1AE3E2F200A6328A /* Margin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Margin.cpp; sourceTree = "<group>"; };
+		8461097B1AE3E2F200A6328A /* Margin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Margin.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -469,6 +477,10 @@
 				8461096B1AE3CCE100A6328A /* WalkOut.h */,
 				8461096E1AE3CDF800A6328A /* CustomerFirst.cpp */,
 				8461096F1AE3CDF800A6328A /* CustomerFirst.h */,
+				846109721AE3DAC100A6328A /* CustomerFactory.cpp */,
+				846109731AE3DAC100A6328A /* CustomerFactory.h */,
+				8461097A1AE3E2F200A6328A /* Margin.cpp */,
+				8461097B1AE3E2F200A6328A /* Margin.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -705,6 +717,7 @@
 				8461093B1AE38A7B00A6328A /* Buy.cpp in Sources */,
 				846109701AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
 				846109331AE34DE300A6328A /* Desk.cpp in Sources */,
+				8461097C1AE3E2F200A6328A /* Margin.cpp in Sources */,
 				841054791AE27EC3001582BA /* Item.cpp in Sources */,
 				846109371AE350AA00A6328A /* Util.cpp in Sources */,
 				8410548C1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
@@ -715,6 +728,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				841054981AE2C173001582BA /* ItemFactory.cpp in Sources */,
+				846109741AE3DAC100A6328A /* CustomerFactory.cpp in Sources */,
 				846109681AE3CB5F00A6328A /* WalkIn.cpp in Sources */,
 				841054941AE2BE46001582BA /* Player.cpp in Sources */,
 				841054851AE2A86B001582BA /* Say.cpp in Sources */,
@@ -745,12 +759,14 @@
 				846109711AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				846109381AE350AA00A6328A /* Util.cpp in Sources */,
+				846109751AE3DAC100A6328A /* CustomerFactory.cpp in Sources */,
 				841054991AE2C173001582BA /* ItemFactory.cpp in Sources */,
 				841054951AE2BE46001582BA /* Player.cpp in Sources */,
 				8410547A1AE27EC3001582BA /* Item.cpp in Sources */,
 				846109401AE399EA00A6328A /* PayDollar.cpp in Sources */,
 				841054821AE292EB001582BA /* MessageBalloon.cpp in Sources */,
 				8410548D1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
+				8461097D1AE3E2F200A6328A /* Margin.cpp in Sources */,
 				8461096D1AE3CCE100A6328A /* WalkOut.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
