@@ -9,10 +9,10 @@ class GoldPan : public Item {
 public:
     // implement the "static create()" method manually
     CREATE_FUNC(GoldPan);
-    
-public:
     virtual bool init();
     
+	virtual const char* getItemName() const { return "GoldPan"; }
 };
+
 #endif
 

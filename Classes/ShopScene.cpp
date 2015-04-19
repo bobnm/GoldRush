@@ -3,6 +3,7 @@
 #include "People.h"
 #include "MessageBalloon.h"
 #include "Player.h"
+#include "Desk.h"
 
 USING_NS_CC;
 
@@ -63,53 +64,17 @@ bool Shop::init()
 		customer->setPosition(center + Vec2(150,0));
 		this->addChild(customer, 70);
 	}
+
+	{
+		auto desk = Desk::create();
+		this->addChild(desk, 130);
+	}
+
     {
         auto player = Player::create();
         this->addChild(player, 500);
     }
 
-#if 0
-	{
-		auto listener = EventListenerTouchOneByOne::create();
-		//listener->setSwallowTouches(true);
-
-		listener->onTouchBegan = CC_CALLBACK_2(Shop::onTouchBegan_, this);
-		listener->onTouchMoved = CC_CALLBACK_2(Shop::onTouchMoved_, this);
-		listener->onTouchEnded = CC_CALLBACK_2(Shop::onTouchEnded_, this);
-		listener->onTouchCancelled = CC_CALLBACK_2(Shop::onTouchCancelled_, this);
-
-		this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
-	}
-#endif
-
     return true;
 }
-
-#if 0
-bool Shop::onTouchBegan_(Touch* touch, Event* event)
-{
-	auto target = event->getCurrentTarget();
-	if( target != this ) return false;
-	log("%f, %f", touch->getLocation().x, touch->getLocation().y);
-	Vec2 local = target->convertToNodeSpace(touch->getLocation());
-	log("  -> %f, %f", local.x, local.y);
-    return true;
-}
-
-void Shop::onTouchMoved_(Touch* touch, Event* event)
-{
-	log("sprite onTouchesMoved.. ");
-}
-
-void Shop::onTouchEnded_(Touch* touch, Event* event)
-{
-	log("sprite onTouchesEnded.. ");
-}
-
-void Shop::onTouchCancelled_(Touch* touch, Event* event)
-{
-	log("sprite onTouchesCancelled.. ");
-}
-
-#endif
 

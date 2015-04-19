@@ -1,8 +1,19 @@
 #include "Customer.h"
 #include "Say.h"
 #include "ClearMessage.h"
+#include "MessageBalloon.h"
 
 using namespace cocos2d;
+
+namespace {
+    Customer* sInstance = nullptr;
+}
+
+Customer* Customer::getInstance()
+{
+    CC_ASSERT(sInstance);
+    return sInstance;
+}
 
 bool Customer::init()
 {
@@ -42,6 +53,36 @@ bool Customer::init()
                                      FadeOut::create(.5),
                                      NULL);
     sprite->runAction(sequence);
+
+	CC_ASSERT(!sInstance);
+	sInstance = this;
 	return true;
+}
+
+void Customer::onPresented(const Item& item)
+{
+    if( std::string(item.getItemName()) == "GoldPan" )
+	{
+		auto sprite = this->getChildren().at(0);
+		sprite->stopAllActions();
+		MessageBalloon::getInstance()->birth("ゴールドパン", MessageBalloon::RIGHT);
+		auto sequence = Sequence::create(
+				Say::create("これはなんだ？"),
+				DelayTime::create(2),
+				Say::create("すくう？"),
+				DelayTime::create(3),
+				Say::create("川で使うのか。"),
+				DelayTime::create(2),
+				Say::create("オーケー"),
+				DelayTime::create(1),
+				Say::create("使ってみるよ。"),
+				DelayTime::create(3),
+				Say::create("ありがとう。"),
+				DelayTime::create(1),
+				ClearMessage::create(),
+				FadeOut::create(.5),
+				NULL);
+		sprite->runAction(sequence);
+	}
 }
 

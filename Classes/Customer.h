@@ -13,15 +13,20 @@ public:
 public:
     virtual bool init();
 
+    static Customer* getInstance();
+
 public:
 	const Item& getNeedItem() const;
 	int getMoney() const { return mMoney; }
+
+	void onPresented(const Item& item);
 
 private:
     void say(const char* message);
     
 private:
 	int mMoney;
+	cocos2d::Sprite* mSprite;
 };
 
 #endif

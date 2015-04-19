@@ -1,4 +1,5 @@
 #include "Item.h"
+#include "Desk.h"
 
 using namespace cocos2d;
 
@@ -38,6 +39,7 @@ bool Item::onTouchBegan_(Touch* touch, Event* event)
 	mTouchNode->setScale(mOriginalScale * 0.8f);
 	mTouchNode->setOpacity(mOriginalOpacity * 0.6f);
 	mTouchOffset = local;
+	mDragStartPos = touch->getLocation();
 	//log("sprite onToucheBegan.. ");
     return true;
 }
@@ -53,6 +55,8 @@ void Item::onTouchEnded_(Touch* touch, Event* event)
 	//log("sprite onTouchesEnded.. ");
 	mTouchNode->setScale(mOriginalScale);
 	mTouchNode->setOpacity(mOriginalOpacity);
+    
+    Desk::getInstance()->onDrop(*this);
 }
 
 void Item::onTouchCancelled_(Touch* touch, Event* event)
