@@ -29,6 +29,8 @@ bool Shop::init()
     {
         return false;
     }
+
+	srand((unsigned int)time(NULL));
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();

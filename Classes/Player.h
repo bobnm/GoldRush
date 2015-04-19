@@ -14,6 +14,7 @@ public:
     virtual bool init();
 
 	void sell(Item* item);
+	void take(Item* item);
     
 private:
     std::vector<std::string>* mInventoryID;

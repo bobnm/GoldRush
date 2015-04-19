@@ -4,6 +4,7 @@
 namespace Util {
     int GetScreenWidth();
 	int GetScreenHeight();
+	float GetRand(float max);
 }
 
 #endif

@@ -30,8 +30,8 @@ bool MessageBalloon::init()
 		mFreeBalloon->pushBack(sprite);
 	}
     
-    retain();
     sInstance = this;
+	sInstance->retain();
     return true;
 }
 
@@ -112,3 +112,4 @@ void MessageBalloon::moveUpwardActiveBalloon()
         balloon->runAction(MoveBy::create(0.1, Vec2(0, 30)));
     }
 }
+

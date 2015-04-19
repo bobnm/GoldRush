@@ -17,5 +17,10 @@ int GetScreenHeight()
 	return visibleSize.height;
 }
 
+float GetRand(float max)
+{
+	return (float)rand() / RAND_MAX * max;
+}
+
 }
 

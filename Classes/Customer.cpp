@@ -3,6 +3,7 @@
 #include "ClearMessage.h"
 #include "MessageBalloon.h"
 #include "Buy.h"
+#include "PayDollar.h"
 
 using namespace cocos2d;
 
@@ -35,9 +36,9 @@ bool Customer::init()
                                      Say::create("俺も金を堀りに来た口さ。"),
                                      DelayTime::create(4),
                                      Say::create("でもいま着いたばかりで"),
-                                     DelayTime::create(6),
+                                     DelayTime::create(2),
                                      Say::create("まだ何もわからない。"),
-                                     DelayTime::create(8),
+                                     DelayTime::create(4),
                                      Say::create("金は、どこで採れるんだ？"),
                                      DelayTime::create(4),
                                      Say::create("どんな道具がいる？"),
@@ -50,6 +51,7 @@ bool Customer::init()
                                      DelayTime::create(10),
                                      Say::create("急いでいるんだ。もういい。"),
                                      DelayTime::create(1),
+									 CallFunc::create([this](){ this->mDone = true; }),
                                      ClearMessage::create(),
                                      FadeOut::create(.5),
                                      NULL);
@@ -58,6 +60,7 @@ bool Customer::init()
 
 	CC_ASSERT(!sInstance);
 	sInstance = this;
+	sInstance->retain();
 	return true;
 }
 
@@ -79,6 +82,7 @@ void Customer::onPresented(Item* item)
 				Say::create("オーケー"),
 				DelayTime::create(1),
 				Say::create("使ってみるよ。"),
+				PayDollar::create(50),
 				DelayTime::create(3),
 				Say::create("ありがとう。"),
 				DelayTime::create(1),

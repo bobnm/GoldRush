@@ -98,6 +98,24 @@
 		846109381AE350AA00A6328A /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109361AE350AA00A6328A /* Util.cpp */; };
 		8461093B1AE38A7B00A6328A /* Buy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109391AE38A7B00A6328A /* Buy.cpp */; };
 		8461093C1AE38A7B00A6328A /* Buy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109391AE38A7B00A6328A /* Buy.cpp */; };
+		8461093F1AE399EA00A6328A /* PayDollar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461093D1AE399EA00A6328A /* PayDollar.cpp */; };
+		846109401AE399EA00A6328A /* PayDollar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461093D1AE399EA00A6328A /* PayDollar.cpp */; };
+		846109431AE3A19500A6328A /* ItemDollar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109411AE3A19500A6328A /* ItemDollar.cpp */; };
+		846109441AE3A19500A6328A /* ItemDollar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109411AE3A19500A6328A /* ItemDollar.cpp */; };
+		8461094C1AE3A3B500A6328A /* dollar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109451AE3A3B500A6328A /* dollar1.png */; };
+		8461094D1AE3A3B500A6328A /* dollar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109451AE3A3B500A6328A /* dollar1.png */; };
+		8461094E1AE3A3B500A6328A /* dollar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109461AE3A3B500A6328A /* dollar2.png */; };
+		8461094F1AE3A3B500A6328A /* dollar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109461AE3A3B500A6328A /* dollar2.png */; };
+		846109501AE3A3B500A6328A /* dollar5.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109471AE3A3B500A6328A /* dollar5.png */; };
+		846109511AE3A3B500A6328A /* dollar5.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109471AE3A3B500A6328A /* dollar5.png */; };
+		846109521AE3A3B500A6328A /* dollar10.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109481AE3A3B500A6328A /* dollar10.png */; };
+		846109531AE3A3B500A6328A /* dollar10.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109481AE3A3B500A6328A /* dollar10.png */; };
+		846109541AE3A3B500A6328A /* dollar20.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109491AE3A3B500A6328A /* dollar20.png */; };
+		846109551AE3A3B500A6328A /* dollar20.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109491AE3A3B500A6328A /* dollar20.png */; };
+		846109561AE3A3B500A6328A /* dollar50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461094A1AE3A3B500A6328A /* dollar50.png */; };
+		846109571AE3A3B500A6328A /* dollar50.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461094A1AE3A3B500A6328A /* dollar50.png */; };
+		846109581AE3A3B500A6328A /* dollar100.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461094B1AE3A3B500A6328A /* dollar100.png */; };
+		846109591AE3A3B500A6328A /* dollar100.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461094B1AE3A3B500A6328A /* dollar100.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -222,6 +240,17 @@
 		846109361AE350AA00A6328A /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
 		846109391AE38A7B00A6328A /* Buy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buy.cpp; sourceTree = "<group>"; };
 		8461093A1AE38A7B00A6328A /* Buy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buy.h; sourceTree = "<group>"; };
+		8461093D1AE399EA00A6328A /* PayDollar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PayDollar.cpp; sourceTree = "<group>"; };
+		8461093E1AE399EA00A6328A /* PayDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayDollar.h; sourceTree = "<group>"; };
+		846109411AE3A19500A6328A /* ItemDollar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemDollar.cpp; sourceTree = "<group>"; };
+		846109421AE3A19500A6328A /* ItemDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDollar.h; sourceTree = "<group>"; };
+		846109451AE3A3B500A6328A /* dollar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar1.png; sourceTree = "<group>"; };
+		846109461AE3A3B500A6328A /* dollar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar2.png; sourceTree = "<group>"; };
+		846109471AE3A3B500A6328A /* dollar5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar5.png; sourceTree = "<group>"; };
+		846109481AE3A3B500A6328A /* dollar10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar10.png; sourceTree = "<group>"; };
+		846109491AE3A3B500A6328A /* dollar20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar20.png; sourceTree = "<group>"; };
+		8461094A1AE3A3B500A6328A /* dollar50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar50.png; sourceTree = "<group>"; };
+		8461094B1AE3A3B500A6328A /* dollar100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollar100.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -357,6 +386,13 @@
 				841054611AE23391001582BA /* bg.png */,
 				841054871AE2AB2D001582BA /* balloon.png */,
 				8410549A1AE2C4CB001582BA /* goldpan.png */,
+				846109451AE3A3B500A6328A /* dollar1.png */,
+				846109461AE3A3B500A6328A /* dollar2.png */,
+				846109471AE3A3B500A6328A /* dollar5.png */,
+				846109481AE3A3B500A6328A /* dollar10.png */,
+				846109491AE3A3B500A6328A /* dollar20.png */,
+				8461094A1AE3A3B500A6328A /* dollar50.png */,
+				8461094B1AE3A3B500A6328A /* dollar100.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -395,6 +431,10 @@
 				846109351AE3504700A6328A /* Util.h */,
 				846109391AE38A7B00A6328A /* Buy.cpp */,
 				8461093A1AE38A7B00A6328A /* Buy.h */,
+				8461093D1AE399EA00A6328A /* PayDollar.cpp */,
+				8461093E1AE399EA00A6328A /* PayDollar.h */,
+				846109411AE3A19500A6328A /* ItemDollar.cpp */,
+				846109421AE3A19500A6328A /* ItemDollar.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -554,6 +594,8 @@
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				46880B8119C43A67006E1F66 /* HelloWorld.png in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
+				8461094C1AE3A3B500A6328A /* dollar1.png in Resources */,
+				846109521AE3A3B500A6328A /* dollar10.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				841054691AE23CE6001582BA /* customer.png in Resources */,
@@ -563,6 +605,8 @@
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
+				846109501AE3A3B500A6328A /* dollar5.png in Resources */,
+				846109541AE3A3B500A6328A /* dollar20.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
@@ -574,6 +618,9 @@
 				8410545F1AE22AF5001582BA /* table.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				841054881AE2AB2D001582BA /* balloon.png in Resources */,
+				846109581AE3A3B500A6328A /* dollar100.png in Resources */,
+				846109561AE3A3B500A6328A /* dollar50.png in Resources */,
+				8461094E1AE3A3B500A6328A /* dollar2.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
@@ -585,15 +632,22 @@
 			files = (
 				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
 				8410546A1AE23CE6001582BA /* customer.png in Resources */,
+				846109551AE3A3B500A6328A /* dollar20.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				8410549C1AE2C4CB001582BA /* goldpan.png in Resources */,
 				841054631AE23391001582BA /* bg.png in Resources */,
 				841054891AE2AB2D001582BA /* balloon.png in Resources */,
 				8410546D1AE23F87001582BA /* people.png in Resources */,
+				846109571AE3A3B500A6328A /* dollar50.png in Resources */,
 				3EACC99019EE6D4300EB3C5E /* res in Resources */,
 				521A8EAA19F11F5000D177D7 /* fonts in Resources */,
 				46880B7C19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				8461094F1AE3A3B500A6328A /* dollar2.png in Resources */,
+				8461094D1AE3A3B500A6328A /* dollar1.png in Resources */,
 				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
+				846109511AE3A3B500A6328A /* dollar5.png in Resources */,
+				846109531AE3A3B500A6328A /* dollar10.png in Resources */,
+				846109591AE3A3B500A6328A /* dollar100.png in Resources */,
 				841054601AE22AF5001582BA /* table.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,6 +659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846109431AE3A19500A6328A /* ItemDollar.cpp in Sources */,
 				8461093B1AE38A7B00A6328A /* Buy.cpp in Sources */,
 				846109331AE34DE300A6328A /* Desk.cpp in Sources */,
 				841054791AE27EC3001582BA /* Item.cpp in Sources */,
@@ -622,6 +677,7 @@
 				841054661AE23B84001582BA /* Customer.cpp in Sources */,
 				8410545C1AE22A4C001582BA /* ShopScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				8461093F1AE399EA00A6328A /* PayDollar.cpp in Sources */,
 				841054811AE292EB001582BA /* MessageBalloon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +688,7 @@
 			files = (
 				841054671AE23B84001582BA /* Customer.cpp in Sources */,
 				841054911AE2BA47001582BA /* ItemGoldPan.cpp in Sources */,
+				846109441AE3A19500A6328A /* ItemDollar.cpp in Sources */,
 				846109341AE34DE300A6328A /* Desk.cpp in Sources */,
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
@@ -644,6 +701,7 @@
 				841054991AE2C173001582BA /* ItemFactory.cpp in Sources */,
 				841054951AE2BE46001582BA /* Player.cpp in Sources */,
 				8410547A1AE27EC3001582BA /* Item.cpp in Sources */,
+				846109401AE399EA00A6328A /* PayDollar.cpp in Sources */,
 				841054821AE292EB001582BA /* MessageBalloon.cpp in Sources */,
 				8410548D1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
 			);

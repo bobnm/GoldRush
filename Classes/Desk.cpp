@@ -19,6 +19,7 @@ bool Desk::init()
     if( !Layer::init() ) return false;
     CC_ASSERT(sInstance == nullptr);
     sInstance = this;
+	sInstance->retain();
 	return true;
 }
 

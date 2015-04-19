@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "ItemFactory.h"
+#include "Util.h"
 
 using namespace cocos2d;
 
@@ -39,6 +40,7 @@ bool Player::init()
     }
     CC_ASSERT(sInstance == nullptr);
     sInstance = this;
+	sInstance->retain();
     return true;
 }
 
@@ -46,5 +48,12 @@ void Player::sell(Item* item)
 {
 	mInventory->eraseObject(item);
 	item->sell();
+}
+
+void Player::take(Item* item)
+{
+	mInventory->pushBack(item);
+	item->setPosition(Vec2(500 + Util::GetRand(50), 100 + Util::GetRand(20)));
+	this->addChild(item);
 }
 
