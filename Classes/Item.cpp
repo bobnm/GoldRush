@@ -12,7 +12,7 @@ bool Item::init()
 void Item::initTouch(Node* node)
 {
     auto listener = EventListenerTouchOneByOne::create();
-	//listener->setSwallowTouches(true);
+	listener->setSwallowTouches(true);
 
     listener->onTouchBegan = CC_CALLBACK_2(Item::onTouchBegan_, this);
     listener->onTouchMoved = CC_CALLBACK_2(Item::onTouchMoved_, this);

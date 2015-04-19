@@ -53,7 +53,7 @@ void Player::sell(Item* item)
 void Player::take(Item* item)
 {
 	mInventory->pushBack(item);
-	item->setPosition(Vec2(500 + Util::GetRand(50), 100 + Util::GetRand(20)));
+	item->setPosition(Vec2(500 + Util::GetRand(100), 100 + Util::GetRand(80)));
 	this->addChild(item);
 }
 
