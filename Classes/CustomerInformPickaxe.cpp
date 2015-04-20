@@ -52,7 +52,7 @@ bool CustomerInformPickaxe::init()
 									 Margin::create(),
                                      Say::create("だからよォ"),
                                      DelayTime::create(1),
-									 Say::create("これからは岩を掘るしかねえ"),
+									 Say::create("これからは岩掘るしかねえ"),
 									 CallFunc::create([this](){ this->mPrice = 20; }),
                                      DelayTime::create(3),
 									 Margin::create(),

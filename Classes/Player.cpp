@@ -88,6 +88,10 @@ void Player::sell(Item* item)
 void Player::take(Item* item)
 {
 	mInventory->push_back(item->getItemID());
+	if( !isUnlockedItem(item->getItemID()) )
+	{
+		mUnlockedItem->push_back(item->getItemID());
+	}
 	item->take();
 }
 
@@ -101,3 +105,7 @@ bool Player::isUnlockedItem(const std::string& item_id)
 	return std::find(mUnlockedItem->begin(), mUnlockedItem->end(), item_id) != std::end(*mUnlockedItem);
 }
 
+bool Player::hasItem(const std::string& item_id)
+{
+	return std::find(mInventory->begin(), mInventory->end(), item_id) != std::end(*mInventory);
+}

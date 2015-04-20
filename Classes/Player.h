@@ -19,6 +19,7 @@ public:
 
 	std::vector<std::string>* getInventory() { return mInventory; }
 	bool isUnlockedItem(const std::string& item_id);
+	bool hasItem(const std::string& item_id);
     
 private:
     std::vector<std::string>* mInventory;
