@@ -18,6 +18,7 @@ Buy* Buy::create(Item* item)
 void Buy::init(Item* item)
 {
 	mItem = item;
+	mItem->retain();
 }
 
 void Buy::update(float time) {

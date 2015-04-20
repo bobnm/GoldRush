@@ -35,7 +35,7 @@ bool Player::init()
     mUnlockedItem->push_back("Dollar50");
     mUnlockedItem->push_back("Dollar100");
 	mUnlockedItem->push_back("GoldPan");
-#if 1
+#if 0
 	mUnlockedItem->push_back("Pickaxe");
 	mUnlockedItem->push_back("Shovel");
 #endif
