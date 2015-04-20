@@ -4,6 +4,7 @@
 
 Customer* CustomerFactory::create(const std::string& id)
 {
+	Customer::deleteInstance();
     if(id == "First") return CustomerFirst::create();
     if(id == "Random") return CustomerRandom::create();
     CC_ASSERT(false && "Unknown Customer ID");

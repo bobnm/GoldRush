@@ -25,6 +25,7 @@ bool CustomerFirst::init()
 	sprite->setScale(3);
     this->addChild(sprite, 0);
     
+	mReadyToLeave = false;
     sprite->setOpacity(0);
     auto sequence = Sequence::create(
 									 WalkIn::create(.5,Vec2(10,0),10,3),
@@ -58,12 +59,12 @@ bool CustomerFirst::init()
 									 Margin::create(),
                                      Say::create("急いでんだ。もういい"),
                                      DelayTime::create(1),
-									 CallFunc::create([this](){ this->mDone = true; }),
+									 CallFunc::create([this](){ this->mReadyToLeave = true; }),
                                      ClearMessage::create(),
 									 WalkOut::create(.5,Vec2(10,0),10,3),
                                      NULL);
     sprite->runAction(sequence);
-	mDone = false;
+	this->setAction(sequence);
 
 	setSingleton(this);
 	return true;
@@ -72,7 +73,7 @@ bool CustomerFirst::init()
 void CustomerFirst::onPresented(Item* item)
 {
 	log("onPresented");
-	if( mDone ) return;
+	if( mReadyToLeave ) return;
     if( std::string(item->getItemID()) == "GoldPan" )
 	{
 		auto sprite = this->getChildren().at(0);
@@ -103,8 +104,9 @@ void CustomerFirst::onPresented(Item* item)
 				WalkOut::create(.5,Vec2(10,0),10,3),
 				NULL);
 		sprite->runAction(sequence);
+		this->setAction(sequence);
 		item->lock();
-		mDone = true;
+		mReadyToLeave = true;
 	}
 }
 

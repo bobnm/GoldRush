@@ -16,7 +16,7 @@ public:
 	virtual void onPresented(Item* item);
 
 private:
-	bool mDone;
+	bool mReadyToLeave;
 };
 
 #endif

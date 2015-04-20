@@ -56,6 +56,7 @@ bool CustomerRandom::init()
 									 WalkOut::create(.5,Vec2(10,0),10,3),
                                      NULL);
     sprite->runAction(sequence);
+	setAction(sequence);
 	mDone = false;
 
 	setSingleton(this);
@@ -87,6 +88,7 @@ void CustomerRandom::onPresented(Item* item)
 				WalkOut::create(.5,Vec2(10,0),10,3),
 				NULL);
 		sprite->runAction(sequence);
+		setAction(sequence);
 		item->lock();
 		mDone = true;
 	}
