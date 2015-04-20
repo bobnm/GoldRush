@@ -138,8 +138,6 @@
 		846109811AE3E44D00A6328A /* CustomerRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461097E1AE3E44D00A6328A /* CustomerRandom.cpp */; };
 		846109881AE3F2D400A6328A /* ItemDB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109861AE3F2D400A6328A /* ItemDB.cpp */; };
 		846109891AE3F2D400A6328A /* ItemDB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109861AE3F2D400A6328A /* ItemDB.cpp */; };
-		8461098D1AE45CDF00A6328A /* CustomerArrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461098B1AE45CDF00A6328A /* CustomerArrive.cpp */; };
-		8461098E1AE45CDF00A6328A /* CustomerArrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461098B1AE45CDF00A6328A /* CustomerArrive.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -293,8 +291,6 @@
 		8461097F1AE3E44D00A6328A /* CustomerRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerRandom.h; sourceTree = "<group>"; };
 		846109861AE3F2D400A6328A /* ItemDB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemDB.cpp; sourceTree = "<group>"; };
 		846109871AE3F2D400A6328A /* ItemDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDB.h; sourceTree = "<group>"; };
-		8461098B1AE45CDF00A6328A /* CustomerArrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerArrive.cpp; sourceTree = "<group>"; };
-		8461098C1AE45CDF00A6328A /* CustomerArrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerArrive.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -497,8 +493,6 @@
 				8461097F1AE3E44D00A6328A /* CustomerRandom.h */,
 				846109861AE3F2D400A6328A /* ItemDB.cpp */,
 				846109871AE3F2D400A6328A /* ItemDB.h */,
-				8461098B1AE45CDF00A6328A /* CustomerArrive.cpp */,
-				8461098C1AE45CDF00A6328A /* CustomerArrive.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -753,7 +747,6 @@
 				841054851AE2A86B001582BA /* Say.cpp in Sources */,
 				841054661AE23B84001582BA /* Customer.cpp in Sources */,
 				846109801AE3E44D00A6328A /* CustomerRandom.cpp in Sources */,
-				8461098D1AE45CDF00A6328A /* CustomerArrive.cpp in Sources */,
 				8461096C1AE3CCE100A6328A /* WalkOut.cpp in Sources */,
 				8410545C1AE22A4C001582BA /* ShopScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
@@ -782,7 +775,6 @@
 				846109711AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				846109381AE350AA00A6328A /* Util.cpp in Sources */,
-				8461098E1AE45CDF00A6328A /* CustomerArrive.cpp in Sources */,
 				846109751AE3DAC100A6328A /* CustomerFactory.cpp in Sources */,
 				841054991AE2C173001582BA /* ItemFactory.cpp in Sources */,
 				841054951AE2BE46001582BA /* Player.cpp in Sources */,

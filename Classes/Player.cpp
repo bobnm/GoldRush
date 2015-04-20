@@ -11,7 +11,6 @@ namespace {
 
 Player* Player::getInstance()
 {
-    CC_ASSERT(sInstance);
     return sInstance;
 }
 

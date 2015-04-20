@@ -9,7 +9,6 @@ MessageBalloon* sInstance = nullptr;
 
 MessageBalloon* MessageBalloon::getInstance()
 {
-    CC_ASSERT(sInstance);
     return sInstance;
 }
 

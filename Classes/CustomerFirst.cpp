@@ -83,7 +83,7 @@ void CustomerFirst::onPresented(Item* item)
 				DelayTime::create(2),
 				Say::create("……"),
 				DelayTime::create(1),
-				Say::create("なんだこりゃ？"),
+				Say::create("なんだこの皿は？"),
 				DelayTime::create(2),
 				Margin::create(),
 				Say::create("すくう？"),

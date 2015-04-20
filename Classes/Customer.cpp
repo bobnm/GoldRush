@@ -8,7 +8,6 @@ namespace {
 
 Customer* Customer::getInstance()
 {
-    CC_ASSERT(sInstance);
     return sInstance;
 }
 

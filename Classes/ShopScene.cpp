@@ -4,7 +4,6 @@
 #include "MessageBalloon.h"
 #include "Player.h"
 #include "Desk.h"
-#include "CustomerArrive.h"
 
 USING_NS_CC;
 
@@ -72,20 +71,37 @@ bool Shop::init()
         this->addChild(player, 500);
     }
 
-	{
-		auto sequence = Sequence::create(
-				DelayTime::create(2),
-				CustomerArrive::create("First"),
-				DelayTime::create(2),
-				CustomerArrive::create("Random"),
-				DelayTime::create(2),
-				CustomerArrive::create("Random"),
-				DelayTime::create(2),
-				CustomerArrive::create("Random"),
-				NULL);
-		this->runAction(sequence);
-	}
+	mCount = 0;
+	this->scheduleUpdate();
 
     return true;
 }
+
+void Shop::update(float t)
+{
+	static const char* sSeq[] = {
+		"First",
+		"Random",
+		"Random",
+		"NeedPicaxe",
+	};
+
+	if( Customer* c = Customer::getInstance() )
+	{
+		if( c->isDone() )
+		{
+			mCount++;
+			Customer::deleteInstance();
+		}
+	}
+	else
+	{
+		if( mCount < (sizeof(sSeq) / sizeof(sSeq[0])) )
+		{
+			c = CustomerFactory::create(sSeq[mCount]);
+			this->addChild(c, 70);
+		}
+	}
+}
+
 

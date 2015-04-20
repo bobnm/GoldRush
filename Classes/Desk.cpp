@@ -10,7 +10,6 @@ namespace {
 
 Desk* Desk::getInstance()
 {
-    CC_ASSERT(sInstance);
     return sInstance;
 }
 
@@ -34,8 +33,11 @@ bool Desk::onDrop(Item* item)
 	if( !sRect.containsPoint(item->getPosition()) ) return false;
 	log("drop");
 
-	Customer::getInstance()->onPresented(item);
-
+    if( Customer* c = Customer::getInstance() )
+    {
+        c->onPresented(item);
+    }
+    
     return true;
 }
 
