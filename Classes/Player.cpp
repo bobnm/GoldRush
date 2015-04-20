@@ -25,6 +25,20 @@ Player* Player::getInstance()
 bool Player::init()
 {
     mInventory = new std::vector<std::string>();
+    mUnlockedItem = new std::vector<std::string>();
+
+    mUnlockedItem->push_back("Dollar1");
+    mUnlockedItem->push_back("Dollar2");
+    mUnlockedItem->push_back("Dollar5");
+    mUnlockedItem->push_back("Dollar10");
+    mUnlockedItem->push_back("Dollar20");
+    mUnlockedItem->push_back("Dollar50");
+    mUnlockedItem->push_back("Dollar100");
+	mUnlockedItem->push_back("GoldPan");
+#if 1
+	mUnlockedItem->push_back("Pickaxe");
+	mUnlockedItem->push_back("Shovel");
+#endif
 
 #if 0
     mInventory->push_back("GoldPan");
@@ -69,5 +83,10 @@ void Player::take(Item* item)
 void Player::sayItemName(Item* item)
 {
 	MessageBalloon::getInstance()->birth(item->getNameJa(), MessageBalloon::RIGHT);
+}
+
+bool Player::isUnlockedItem(const std::string& item_id)
+{
+	return std::find(mUnlockedItem->begin(), mUnlockedItem->end(), item_id) != std::end(*mUnlockedItem);
 }
 

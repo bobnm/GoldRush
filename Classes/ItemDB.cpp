@@ -1,5 +1,6 @@
 #include "ItemDB.h"
 #include "Util.h"
+#include "Player.h"
 
 namespace {
 	const char* sItemID[] = {
@@ -54,7 +55,13 @@ int ItemDB::getPrice(const std::string& id)
 
 const char* ItemDB::getRandomItemID()
 {
-	return getItemIDByIndex(Util::GetRand(cDollarIDMax + 1, getItemIDMax()));
+	const char* id = nullptr;
+	do
+	{
+		id = getItemIDByIndex(Util::GetRand(cDollarIDMax + 1, getItemIDMax()));
+    }
+    while( !Player::getInstance()->isUnlockedItem(id) );
+	return id;
 }
 
 int ItemDB::getItemIDMax()
