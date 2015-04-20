@@ -29,7 +29,7 @@ int GetRand(int max)
 
 int GetRand(int min, int max)
 {
-	return GetRand(max) + min;
+	return GetRand(max - min) + min;
 }
 
 }

@@ -80,10 +80,13 @@ bool Shop::init()
 void Shop::update(float t)
 {
 	static const char* sSeq[] = {
-		"First",
+		//"First",
 		"Random",
 		"Random",
-		"NeedPicaxe",
+		//"InformPickaxe",
+		"Random",
+		"Random",
+		"Random",
 	};
 
 	if( Customer* c = Customer::getInstance() )

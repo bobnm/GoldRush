@@ -138,6 +138,10 @@
 		846109811AE3E44D00A6328A /* CustomerRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461097E1AE3E44D00A6328A /* CustomerRandom.cpp */; };
 		846109881AE3F2D400A6328A /* ItemDB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109861AE3F2D400A6328A /* ItemDB.cpp */; };
 		846109891AE3F2D400A6328A /* ItemDB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109861AE3F2D400A6328A /* ItemDB.cpp */; };
+		846109911AE4883300A6328A /* ItemPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461098F1AE4883300A6328A /* ItemPickaxe.cpp */; };
+		846109921AE4883300A6328A /* ItemPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461098F1AE4883300A6328A /* ItemPickaxe.cpp */; };
+		846109941AE4898900A6328A /* pickaxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109931AE4898900A6328A /* pickaxe.png */; };
+		846109951AE4898900A6328A /* pickaxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109931AE4898900A6328A /* pickaxe.png */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -291,6 +295,9 @@
 		8461097F1AE3E44D00A6328A /* CustomerRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerRandom.h; sourceTree = "<group>"; };
 		846109861AE3F2D400A6328A /* ItemDB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemDB.cpp; sourceTree = "<group>"; };
 		846109871AE3F2D400A6328A /* ItemDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDB.h; sourceTree = "<group>"; };
+		8461098F1AE4883300A6328A /* ItemPickaxe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemPickaxe.cpp; sourceTree = "<group>"; };
+		846109901AE4883300A6328A /* ItemPickaxe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemPickaxe.h; sourceTree = "<group>"; };
+		846109931AE4898900A6328A /* pickaxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickaxe.png; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -437,6 +444,7 @@
 				846109491AE3A3B500A6328A /* dollar20.png */,
 				8461094A1AE3A3B500A6328A /* dollar50.png */,
 				8461094B1AE3A3B500A6328A /* dollar100.png */,
+				846109931AE4898900A6328A /* pickaxe.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -493,6 +501,8 @@
 				8461097F1AE3E44D00A6328A /* CustomerRandom.h */,
 				846109861AE3F2D400A6328A /* ItemDB.cpp */,
 				846109871AE3F2D400A6328A /* ItemDB.h */,
+				8461098F1AE4883300A6328A /* ItemPickaxe.cpp */,
+				846109901AE4883300A6328A /* ItemPickaxe.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -680,6 +690,7 @@
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				841054881AE2AB2D001582BA /* balloon.png in Resources */,
 				846109581AE3A3B500A6328A /* dollar100.png in Resources */,
+				846109941AE4898900A6328A /* pickaxe.png in Resources */,
 				846109561AE3A3B500A6328A /* dollar50.png in Resources */,
 				8461094E1AE3A3B500A6328A /* dollar2.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
@@ -711,6 +722,7 @@
 				8461094D1AE3A3B500A6328A /* dollar1.png in Resources */,
 				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				846109511AE3A3B500A6328A /* dollar5.png in Resources */,
+				846109951AE4898900A6328A /* pickaxe.png in Resources */,
 				8461095F1AE3C54400A6328A /* customer01.png in Resources */,
 				846109531AE3A3B500A6328A /* dollar10.png in Resources */,
 				846109591AE3A3B500A6328A /* dollar100.png in Resources */,
@@ -725,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846109911AE4883300A6328A /* ItemPickaxe.cpp in Sources */,
 				846109431AE3A19500A6328A /* ItemDollar.cpp in Sources */,
 				8461093B1AE38A7B00A6328A /* Buy.cpp in Sources */,
 				846109701AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
@@ -777,6 +790,7 @@
 				846109381AE350AA00A6328A /* Util.cpp in Sources */,
 				846109751AE3DAC100A6328A /* CustomerFactory.cpp in Sources */,
 				841054991AE2C173001582BA /* ItemFactory.cpp in Sources */,
+				846109921AE4883300A6328A /* ItemPickaxe.cpp in Sources */,
 				841054951AE2BE46001582BA /* Player.cpp in Sources */,
 				8410547A1AE27EC3001582BA /* Item.cpp in Sources */,
 				846109401AE399EA00A6328A /* PayDollar.cpp in Sources */,
