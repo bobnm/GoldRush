@@ -4,6 +4,7 @@
 #include "MessageBalloon.h"
 #include "Player.h"
 #include "Desk.h"
+#include "ItemLayer.h"
 
 USING_NS_CC;
 
@@ -67,8 +68,9 @@ bool Shop::init()
 	}
 
     {
-        auto player = Player::create();
-        this->addChild(player, 500);
+        auto item_layer = ItemLayer::create();
+		item_layer->createPlayerInventoryItem();
+        this->addChild(item_layer, 500);
     }
 
 	mCount = 0;
@@ -80,11 +82,10 @@ bool Shop::init()
 void Shop::update(float t)
 {
 	static const char* sSeq[] = {
+		"First",
+		"Random",
+		"Random",
 		"InformPickaxe",
-		//"First",
-		"Random",
-		"Random",
-		//"InformPickaxe",
 		"Random",
 		"Random",
 		"Random",

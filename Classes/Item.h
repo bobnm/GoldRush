@@ -20,6 +20,7 @@ public:
 	void lock() { mLock = true; }
 	void unlock() { mLock = false; }
 	void sell();
+	void take();
     
 protected:
 	void initTouch(cocos2d::Node* node);

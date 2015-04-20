@@ -1,5 +1,6 @@
 #include "Item.h"
 #include "Desk.h"
+#include "Util.h"
 
 using namespace cocos2d;
 
@@ -76,5 +77,10 @@ void Item::sell()
 			CallFunc::create([this](){ this->removeFromParent(); }),
 			NULL);
 	sprite->runAction(sequence);
+}
+
+void Item::take()
+{
+	this->setPosition(Vec2(500 + Util::GetRand(100), 100 + Util::GetRand(80)));
 }
 

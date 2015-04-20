@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "ShopScene.h"
+#include "Player.h"
 
 USING_NS_CC;
 
@@ -46,6 +47,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
+	{
+		Player::create();
+	}
 	director->runWithScene(Shop::createScene());
 
     return true;

@@ -147,7 +147,6 @@ void CustomerInformPickaxe::onPresented(Item* item)
 					Say::create("あばヨ"),
 					DelayTime::create(1),
 					CallFunc::create([this](){ this->mReadyToLeave = true; }),
-					CallFunc::create([item](){ item->unlock(); }),
 					ClearMessage::create(),
 					WalkOut::create(.5,Vec2(10,0),10,3),
 					NULL);

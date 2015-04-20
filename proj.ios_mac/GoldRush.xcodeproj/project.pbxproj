@@ -156,6 +156,8 @@
 		846109AA1AE49C6F00A6328A /* PutItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109A71AE49C6F00A6328A /* PutItem.cpp */; };
 		846109AD1AE49E6D00A6328A /* ItemMapPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */; };
 		846109AE1AE49E6D00A6328A /* ItemMapPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */; };
+		84A781071AE4BDE400FB3C03 /* ItemLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A781051AE4BDE400FB3C03 /* ItemLayer.cpp */; };
+		84A781081AE4BDE400FB3C03 /* ItemLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A781051AE4BDE400FB3C03 /* ItemLayer.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -323,6 +325,8 @@
 		846109A81AE49C6F00A6328A /* PutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PutItem.h; sourceTree = "<group>"; };
 		846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemMapPickaxe.cpp; sourceTree = "<group>"; };
 		846109AC1AE49E6D00A6328A /* ItemMapPickaxe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemMapPickaxe.h; sourceTree = "<group>"; };
+		84A781051AE4BDE400FB3C03 /* ItemLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemLayer.cpp; sourceTree = "<group>"; };
+		84A781061AE4BDE400FB3C03 /* ItemLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemLayer.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -539,6 +543,8 @@
 				846109A81AE49C6F00A6328A /* PutItem.h */,
 				846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */,
 				846109AC1AE49E6D00A6328A /* ItemMapPickaxe.h */,
+				84A781051AE4BDE400FB3C03 /* ItemLayer.cpp */,
+				84A781061AE4BDE400FB3C03 /* ItemLayer.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -782,6 +788,7 @@
 				846109911AE4883300A6328A /* ItemPickaxe.cpp in Sources */,
 				846109431AE3A19500A6328A /* ItemDollar.cpp in Sources */,
 				8461093B1AE38A7B00A6328A /* Buy.cpp in Sources */,
+				84A781071AE4BDE400FB3C03 /* ItemLayer.cpp in Sources */,
 				846109701AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
 				846109331AE34DE300A6328A /* Desk.cpp in Sources */,
 				846109881AE3F2D400A6328A /* ItemDB.cpp in Sources */,
@@ -819,6 +826,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846109A31AE4929000A6328A /* CustomerInformPickaxe.cpp in Sources */,
+				84A781081AE4BDE400FB3C03 /* ItemLayer.cpp in Sources */,
 				841054671AE23B84001582BA /* Customer.cpp in Sources */,
 				841054911AE2BA47001582BA /* ItemGoldPan.cpp in Sources */,
 				846109441AE3A19500A6328A /* ItemDollar.cpp in Sources */,
