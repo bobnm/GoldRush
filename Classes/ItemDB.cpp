@@ -13,6 +13,7 @@ namespace {
 		"GoldPan",
 		"Pickaxe",
 		"Shovel",
+		"MapPickaxe",
 	};
 	int cDollarIDMax = 6;
 }
@@ -29,6 +30,7 @@ const char* ItemDB::getNameJa(const std::string& id)
     if(id == "Dollar1") return "1ドル";
     if(id == "Pickaxe") return "つるはし";
     if(id == "Shovel") return "シャベル";
+    if(id == "MapPickaxe") return "つるはし仕入れ地図";
     CC_ASSERT(false && "Unknown Item ID");
     return nullptr;
 }
@@ -45,6 +47,7 @@ int ItemDB::getPrice(const std::string& id)
 	if(id == "Dollar1") return 1;
 	if(id == "Pickaxe") return 50;
 	if(id == "Shovel") return 65;
+	if(id == "MapPickaxe") return 30;
     CC_ASSERT(false && "Unknown Item ID");
     return 0;
 }

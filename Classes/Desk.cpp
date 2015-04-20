@@ -1,6 +1,7 @@
 #include "Desk.h"
 #include "Util.h"
 #include "Customer.h"
+#include "Player.h"
 
 using namespace cocos2d;
 
@@ -33,6 +34,7 @@ bool Desk::onDrop(Item* item)
 	if( !sRect.containsPoint(item->getPosition()) ) return false;
 	log("drop");
 
+	Player::getInstance()->sayItemName(item);
     if( Customer* c = Customer::getInstance() )
     {
         c->onPresented(item);

@@ -80,6 +80,7 @@ bool Shop::init()
 void Shop::update(float t)
 {
 	static const char* sSeq[] = {
+		"InformPickaxe",
 		//"First",
 		"Random",
 		"Random",

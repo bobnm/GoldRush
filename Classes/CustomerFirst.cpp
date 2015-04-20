@@ -78,7 +78,6 @@ void CustomerFirst::onPresented(Item* item)
 	{
 		auto sprite = this->getChildren().at(0);
 		sprite->stopAllActions();
-		Player::getInstance()->sayItemName(item);
 		auto sequence = Sequence::create(
 				DelayTime::create(2),
 				Say::create("……"),

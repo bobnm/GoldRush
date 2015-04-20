@@ -29,6 +29,14 @@ bool Player::init()
     mInventoryID->push_back("Pickaxe");
     mInventoryID->push_back("Pickaxe");
     mInventoryID->push_back("Shovel");
+    mInventoryID->push_back("Dollar1");
+    mInventoryID->push_back("Dollar1");
+    mInventoryID->push_back("Dollar10");
+    mInventoryID->push_back("Dollar10");
+    mInventoryID->push_back("Dollar20");
+    mInventoryID->push_back("Dollar20");
+    mInventoryID->push_back("Dollar20");
+    mInventoryID->push_back("Dollar50");
     
     int i = 0;
     for(auto item_id : *mInventoryID)

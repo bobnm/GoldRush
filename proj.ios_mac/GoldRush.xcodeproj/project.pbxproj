@@ -146,6 +146,16 @@
 		846109981AE48E0200A6328A /* shovel.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109961AE48E0200A6328A /* shovel.png */; };
 		8461099B1AE48E1C00A6328A /* ItemShovel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109991AE48E1C00A6328A /* ItemShovel.cpp */; };
 		8461099C1AE48E1C00A6328A /* ItemShovel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109991AE48E1C00A6328A /* ItemShovel.cpp */; };
+		8461099E1AE4926A00A6328A /* informer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461099D1AE4926A00A6328A /* informer.png */; };
+		8461099F1AE4926A00A6328A /* informer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8461099D1AE4926A00A6328A /* informer.png */; };
+		846109A21AE4929000A6328A /* CustomerInformPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109A01AE4929000A6328A /* CustomerInformPickaxe.cpp */; };
+		846109A31AE4929000A6328A /* CustomerInformPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109A01AE4929000A6328A /* CustomerInformPickaxe.cpp */; };
+		846109A51AE4978A00A6328A /* map_pickaxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109A41AE4978A00A6328A /* map_pickaxe.png */; };
+		846109A61AE4978A00A6328A /* map_pickaxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109A41AE4978A00A6328A /* map_pickaxe.png */; };
+		846109A91AE49C6F00A6328A /* PutItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109A71AE49C6F00A6328A /* PutItem.cpp */; };
+		846109AA1AE49C6F00A6328A /* PutItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109A71AE49C6F00A6328A /* PutItem.cpp */; };
+		846109AD1AE49E6D00A6328A /* ItemMapPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */; };
+		846109AE1AE49E6D00A6328A /* ItemMapPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -305,6 +315,14 @@
 		846109961AE48E0200A6328A /* shovel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shovel.png; sourceTree = "<group>"; };
 		846109991AE48E1C00A6328A /* ItemShovel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemShovel.cpp; sourceTree = "<group>"; };
 		8461099A1AE48E1C00A6328A /* ItemShovel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemShovel.h; sourceTree = "<group>"; };
+		8461099D1AE4926A00A6328A /* informer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = informer.png; sourceTree = "<group>"; };
+		846109A01AE4929000A6328A /* CustomerInformPickaxe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomerInformPickaxe.cpp; sourceTree = "<group>"; };
+		846109A11AE4929000A6328A /* CustomerInformPickaxe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerInformPickaxe.h; sourceTree = "<group>"; };
+		846109A41AE4978A00A6328A /* map_pickaxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pickaxe.png; sourceTree = "<group>"; };
+		846109A71AE49C6F00A6328A /* PutItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PutItem.cpp; sourceTree = "<group>"; };
+		846109A81AE49C6F00A6328A /* PutItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PutItem.h; sourceTree = "<group>"; };
+		846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemMapPickaxe.cpp; sourceTree = "<group>"; };
+		846109AC1AE49E6D00A6328A /* ItemMapPickaxe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemMapPickaxe.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -453,6 +471,8 @@
 				8461094B1AE3A3B500A6328A /* dollar100.png */,
 				846109931AE4898900A6328A /* pickaxe.png */,
 				846109961AE48E0200A6328A /* shovel.png */,
+				8461099D1AE4926A00A6328A /* informer.png */,
+				846109A41AE4978A00A6328A /* map_pickaxe.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -513,6 +533,12 @@
 				846109901AE4883300A6328A /* ItemPickaxe.h */,
 				846109991AE48E1C00A6328A /* ItemShovel.cpp */,
 				8461099A1AE48E1C00A6328A /* ItemShovel.h */,
+				846109A01AE4929000A6328A /* CustomerInformPickaxe.cpp */,
+				846109A11AE4929000A6328A /* CustomerInformPickaxe.h */,
+				846109A71AE49C6F00A6328A /* PutItem.cpp */,
+				846109A81AE49C6F00A6328A /* PutItem.h */,
+				846109AB1AE49E6D00A6328A /* ItemMapPickaxe.cpp */,
+				846109AC1AE49E6D00A6328A /* ItemMapPickaxe.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -681,8 +707,10 @@
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
 				8410546C1AE23F87001582BA /* people.png in Resources */,
+				846109A51AE4978A00A6328A /* map_pickaxe.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				8461099E1AE4926A00A6328A /* informer.png in Resources */,
 				846109971AE48E0200A6328A /* shovel.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				846109501AE3A3B500A6328A /* dollar5.png in Resources */,
@@ -714,11 +742,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846109A61AE4978A00A6328A /* map_pickaxe.png in Resources */,
 				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
 				846109611AE3C54400A6328A /* customer02.png in Resources */,
 				8410546A1AE23CE6001582BA /* customer.png in Resources */,
 				846109551AE3A3B500A6328A /* dollar20.png in Resources */,
 				846109651AE3C54400A6328A /* customer04.png in Resources */,
+				8461099F1AE4926A00A6328A /* informer.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				8410549C1AE2C4CB001582BA /* goldpan.png in Resources */,
 				841054631AE23391001582BA /* bg.png in Resources */,
@@ -770,11 +800,14 @@
 				846109681AE3CB5F00A6328A /* WalkIn.cpp in Sources */,
 				841054941AE2BE46001582BA /* Player.cpp in Sources */,
 				841054851AE2A86B001582BA /* Say.cpp in Sources */,
+				846109AD1AE49E6D00A6328A /* ItemMapPickaxe.cpp in Sources */,
 				841054661AE23B84001582BA /* Customer.cpp in Sources */,
+				846109A91AE49C6F00A6328A /* PutItem.cpp in Sources */,
 				846109801AE3E44D00A6328A /* CustomerRandom.cpp in Sources */,
 				8461096C1AE3CCE100A6328A /* WalkOut.cpp in Sources */,
 				8410545C1AE22A4C001582BA /* ShopScene.cpp in Sources */,
 				8461099B1AE48E1C00A6328A /* ItemShovel.cpp in Sources */,
+				846109A21AE4929000A6328A /* CustomerInformPickaxe.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				8461093F1AE399EA00A6328A /* PayDollar.cpp in Sources */,
 				841054811AE292EB001582BA /* MessageBalloon.cpp in Sources */,
@@ -785,6 +818,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846109A31AE4929000A6328A /* CustomerInformPickaxe.cpp in Sources */,
 				841054671AE23B84001582BA /* Customer.cpp in Sources */,
 				841054911AE2BA47001582BA /* ItemGoldPan.cpp in Sources */,
 				846109441AE3A19500A6328A /* ItemDollar.cpp in Sources */,
@@ -799,6 +833,7 @@
 				8461093C1AE38A7B00A6328A /* Buy.cpp in Sources */,
 				846109891AE3F2D400A6328A /* ItemDB.cpp in Sources */,
 				846109711AE3CDF800A6328A /* CustomerFirst.cpp in Sources */,
+				846109AE1AE49E6D00A6328A /* ItemMapPickaxe.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				846109381AE350AA00A6328A /* Util.cpp in Sources */,
 				846109751AE3DAC100A6328A /* CustomerFactory.cpp in Sources */,
@@ -807,6 +842,7 @@
 				841054951AE2BE46001582BA /* Player.cpp in Sources */,
 				8410547A1AE27EC3001582BA /* Item.cpp in Sources */,
 				846109401AE399EA00A6328A /* PayDollar.cpp in Sources */,
+				846109AA1AE49C6F00A6328A /* PutItem.cpp in Sources */,
 				841054821AE292EB001582BA /* MessageBalloon.cpp in Sources */,
 				8410548D1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
 				8461097D1AE3E2F200A6328A /* Margin.cpp in Sources */,

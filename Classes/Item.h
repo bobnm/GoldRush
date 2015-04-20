@@ -18,6 +18,7 @@ public:
     const char* getNameJa() const { return ItemDB::getNameJa(this->getItemID()); }
 
 	void lock() { mLock = true; }
+	void unlock() { mLock = false; }
 	void sell();
     
 protected:
