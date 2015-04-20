@@ -70,7 +70,18 @@ bool Player::init()
 
 void Player::sell(Item* item)
 {
-    mInventory->erase(std::remove(mInventory->begin(), mInventory->end(), item->getItemID()));
+	// 全部消したらダメ
+    //mInventory->erase(std::remove(mInventory->begin(), mInventory->end(), item->getItemID()));
+	for(auto it = mInventory->begin(), end = mInventory->end();
+		it != end;
+		++it)
+	{
+		if( *it == item->getItemID() )
+		{
+			mInventory->erase(it);
+			break;
+		}
+	}
 	item->sell();
 }
 
