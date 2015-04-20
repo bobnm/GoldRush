@@ -2,6 +2,7 @@
 #include "ItemGoldPan.h"
 #include "ItemDollar.h"
 #include "ItemPickaxe.h"
+#include "ItemShovel.h"
 
 Item* ItemFactory::create(const std::string& id)
 {
@@ -14,6 +15,7 @@ Item* ItemFactory::create(const std::string& id)
     if(id == "Dollar2") return Dollar::create(2);
     if(id == "Dollar1") return Dollar::create(1);
     if(id == "Pickaxe") return Pickaxe::create();
+    if(id == "Shovel") return Shovel::create();
     CC_ASSERT(false && "Unknown Item ID");
     return nullptr;
 }

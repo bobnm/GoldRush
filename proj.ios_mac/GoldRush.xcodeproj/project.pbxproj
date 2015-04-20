@@ -142,6 +142,10 @@
 		846109921AE4883300A6328A /* ItemPickaxe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8461098F1AE4883300A6328A /* ItemPickaxe.cpp */; };
 		846109941AE4898900A6328A /* pickaxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109931AE4898900A6328A /* pickaxe.png */; };
 		846109951AE4898900A6328A /* pickaxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109931AE4898900A6328A /* pickaxe.png */; };
+		846109971AE48E0200A6328A /* shovel.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109961AE48E0200A6328A /* shovel.png */; };
+		846109981AE48E0200A6328A /* shovel.png in Resources */ = {isa = PBXBuildFile; fileRef = 846109961AE48E0200A6328A /* shovel.png */; };
+		8461099B1AE48E1C00A6328A /* ItemShovel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109991AE48E1C00A6328A /* ItemShovel.cpp */; };
+		8461099C1AE48E1C00A6328A /* ItemShovel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 846109991AE48E1C00A6328A /* ItemShovel.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -298,6 +302,9 @@
 		8461098F1AE4883300A6328A /* ItemPickaxe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemPickaxe.cpp; sourceTree = "<group>"; };
 		846109901AE4883300A6328A /* ItemPickaxe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemPickaxe.h; sourceTree = "<group>"; };
 		846109931AE4898900A6328A /* pickaxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickaxe.png; sourceTree = "<group>"; };
+		846109961AE48E0200A6328A /* shovel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shovel.png; sourceTree = "<group>"; };
+		846109991AE48E1C00A6328A /* ItemShovel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemShovel.cpp; sourceTree = "<group>"; };
+		8461099A1AE48E1C00A6328A /* ItemShovel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemShovel.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -445,6 +452,7 @@
 				8461094A1AE3A3B500A6328A /* dollar50.png */,
 				8461094B1AE3A3B500A6328A /* dollar100.png */,
 				846109931AE4898900A6328A /* pickaxe.png */,
+				846109961AE48E0200A6328A /* shovel.png */,
 			);
 			name = Resources;
 			path = ../Resources;
@@ -503,6 +511,8 @@
 				846109871AE3F2D400A6328A /* ItemDB.h */,
 				8461098F1AE4883300A6328A /* ItemPickaxe.cpp */,
 				846109901AE4883300A6328A /* ItemPickaxe.h */,
+				846109991AE48E1C00A6328A /* ItemShovel.cpp */,
+				8461099A1AE48E1C00A6328A /* ItemShovel.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -673,6 +683,7 @@
 				8410546C1AE23F87001582BA /* people.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				846109971AE48E0200A6328A /* shovel.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				846109501AE3A3B500A6328A /* dollar5.png in Resources */,
 				846109541AE3A3B500A6328A /* dollar20.png in Resources */,
@@ -721,6 +732,7 @@
 				846109631AE3C54400A6328A /* customer03.png in Resources */,
 				8461094D1AE3A3B500A6328A /* dollar1.png in Resources */,
 				46880B7E19C43A67006E1F66 /* CloseSelected.png in Resources */,
+				846109981AE48E0200A6328A /* shovel.png in Resources */,
 				846109511AE3A3B500A6328A /* dollar5.png in Resources */,
 				846109951AE4898900A6328A /* pickaxe.png in Resources */,
 				8461095F1AE3C54400A6328A /* customer01.png in Resources */,
@@ -762,6 +774,7 @@
 				846109801AE3E44D00A6328A /* CustomerRandom.cpp in Sources */,
 				8461096C1AE3CCE100A6328A /* WalkOut.cpp in Sources */,
 				8410545C1AE22A4C001582BA /* ShopScene.cpp in Sources */,
+				8461099B1AE48E1C00A6328A /* ItemShovel.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				8461093F1AE399EA00A6328A /* PayDollar.cpp in Sources */,
 				841054811AE292EB001582BA /* MessageBalloon.cpp in Sources */,
@@ -798,6 +811,7 @@
 				8410548D1AE2B59A001582BA /* ClearMessage.cpp in Sources */,
 				8461097D1AE3E2F200A6328A /* Margin.cpp in Sources */,
 				8461096D1AE3CCE100A6328A /* WalkOut.cpp in Sources */,
+				8461099C1AE48E1C00A6328A /* ItemShovel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

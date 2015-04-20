@@ -28,7 +28,7 @@ bool Desk::onDrop(Item* item)
 			130 * 3,
 			0,
 			Util::GetScreenWidth() - 130 * 3,
-			Util::GetScreenHeight() - 180 * 3);
+			Util::GetScreenHeight() - 150 * 3);
 	if( sRect.containsPoint(item->getDragStartPos()) ) return false;
 	if( !sRect.containsPoint(item->getPosition()) ) return false;
 	log("drop");
